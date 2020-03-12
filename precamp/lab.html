@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreCamp5 HTML Lab</title>
+</head>
+<body>
+    <h1></h1>
+<div>
+    การบ้าน Precamp วิวัฒน์ สาทรสวัสดิ์ <br><br>
+    1. ให้หาว่า attribute ของ tag ต่อไปนี้มีอะไรบ้างและใช้งานอย่างไร <br>
+    <table border="1">
+        <tr>
+            <th>Tag name</th>
+            <th>Attribute</th>
+            <th>Value</th>
+            <th>How to use it</th>
+        </tr>
+        <tr>
+            <td>&lt;h1-6&gt;</td>
+            <td>align</td>
+            <td>left, center, right, justify</td>
+            <td>define HTML headings</td>
+        </tr>
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>align</td>
+            <td>left, center, right, justify</td>
+            <td>defines a paragraph</td>
+        </tr>
+        <tr>
+            <td>&lt;div&gt;</td>
+            <td>align</td>
+            <td>left, center, right, justify</td>
+            <td>defines a division or a section in an HTML document</td>
+        </tr>
+        <tr>
+            <td>&lt;img&gt;</td>
+            <td>align <br> alt <br> border <br> crossorigin <br> height <br> hspace <br> ismap <br> longdese <br> referrerpolicy <br> sizes <br> src<br>srcset <br> usemap <br> vspace <br> width </td>
+            <td>top, bottom, middle, left, right <br>text <br>pixels<br>anonymous,use-credentials<br>pixels<br>pixels<br>ismap<br>url<br>origin<br>sizes<br>url<br>url<br>#mapname<br>pixels<br>pixels</td>
+            <td>Specifies the alignment of an image according to surrounding elements<br>
+                Specifies an alternate text for an image<br>
+                Specifies the width of the border around an image<br>
+                Allow images from third-party sites that allow cross-origin access to be used with canvas<br>
+                Specifies the height of an image<br>
+                Specifies the whitespace on left and right side of an image<br>
+                Specifies an image as a server-side image-map<br>
+                Specifies a URL to a detailed description of an image<br>
+                Specifies which referrer to use when fetching the image<br>
+                Specifies image sizes for different page layouts<br>
+                Specifies the URL of an image<br>
+                Specifies the URL of the image to use in different situations<br>
+                Specifies an image as a client-side image-map<br>
+                Specifies the whitespace on top and bottom of an image<br>
+                Specifies the width of an image
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;a&gt;</td>
+            <td>charset<br>
+                coords<br>
+                download<br>
+                href<br>
+                hreflang<br>
+                media<br>
+                name<br>
+                ping<br>
+                referrerpolicy<br>
+                rel<br>
+                rev<br>
+                shape<br>
+                target<br>
+                type
+           </td>
+
+           <td> char_encoding <br>
+                coordinates<br>
+                filename<br>
+                URL<br>
+                language_code<br>
+                media_query<br>
+                section_name<br>
+                list_of_URLs<br>
+                no-referrer,origin<br>
+                alternate,author,bookmark,license<br>
+                text<br>
+                default,rect,circle,poly<br>
+                _blank, _parent, _self, _top, framename <br>
+                media_type
+           </td>
+
+            <td> Specifies the character-set of a linked document<br>
+                Specifies the coordinates of a link<br>
+                Specifies that the target will be downloaded when a user clicks on the hyperlink<br>
+                Specifies the URL of the page the link goes to<br>
+                Specifies the language of the linked document<br>
+                Specifies what media/device the linked document is optimized for<br>
+                Specifies the name of an anchor<br>
+                Specifies a space-separated list of URLs to which, when the link is followed, post requests with the body ping will be sent by the browser (in the background). Typically used for tracking.<br>
+                Specifies which referrer to send<br>
+                Specifies the relationship between the current document and the linked document<br>
+                Specifies the relationship between the linked document and the current document<br>
+                Specifies the shape of a link<br>
+                Specifies where to open the linked document<br>
+                Specifies the media type of the linked document
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;ul&gt;</td>
+            <td>compact <br> type</td>
+            <td>compact<br> disc, square, circle</td>
+            <td>Specifies that the list should render smaller than normal<br>
+                Specifies the kind of marker to use in the list
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;ol&gt;</td>
+            <td>compact <br> reversed <br>start <br>type</td>
+            <td>compact<br>reversed <br>number<br> 1, A, a, I, i </td>
+            <td>Specifies that the list should render smaller than normal<br>
+                Specifies that the list order should be descending (9,8,7...)<br>
+                Specifies the start value of an ordered list<br>
+                Specifies the kind of marker to use in the list
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;table&gt;</td>
+            <td></td>
+            <td></td>
+            <td>Defines a table
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;form&gt;</td>
+            <td>accept<br>
+                accept-charset<br>
+                action<br>
+                autocomplete<br>
+                enctype<br>
+                method<br>
+                name<br>
+                novalidate<br>
+                novalidate<br>
+            </td>
+                       
+            <td>file_type<br>
+                character_set<br>
+                URL<br>
+                on,off<br>
+                text/plain<br>
+                get,post<br>
+                text<br>
+                novalidate<br>
+                _blank, _self, _parent, _top
+
+            </td>
+            <td>Specifies a comma-separated list of file types  that the server accepts (that can be submitted through the file upload)<br>
+                Specifies the character encodings that are to be used for the form submission<br>
+                Specifies where to send the form-data when a form is submitted<br>
+                Specifies whether a form should have autocomplete on or off<br>
+                Specifies how the form-data should be encoded when submitting it to the server (only for method="post")<br>
+                Specifies the HTTP method to use when sending form-data<br>
+                Specifies the name of a form<br>
+                Specifies that the form should not be validated when submitted<br>
+                Specifies where to display the response that is received after submitting the form
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;button&gt;</td>
+            <td>autofocus<br>
+                disabled<br>
+                form<br>
+                formaction<br>
+                formenctype<br>
+                formmethod<br>
+                formnovalidate<br>
+                formtarget<br>
+                name<br>
+                type<br>
+                value
+            </td>
+            <td>autofocus<br>
+                disabled<br>
+                form_id<br>
+                URL<br>
+                multipart/form-data, 
+                text/plain<br>
+                get,
+                post<br>
+                formnovalidate<br>
+                _blank, 
+                _self, 
+                _parent, 
+                _top, 
+                framename<br>
+                name<br>
+                button,
+                reset,
+                submit<br>
+                text
+            </td>
+            <td>
+                Specifies that a button should automatically get focus when the page loads<br>
+                Specifies that a button should be disabled<br>
+                Specifies which form the button belongs to<br>
+                Specifies where to send the form-data when a form is submitted. Only for type="submit"<br>
+                Specifies how form-data should be encoded before sending it to a server. Only for type="submit"<br>
+                Specifies how to send the form-data (which HTTP method to use). Only for type="submit"<br>
+                Specifies that the form-data should not be validated on submission. Only for type="submit" <br>
+                Specifies where to display the response after submitting the form. Only for type="submit"<br>
+                Specifies a name for the button<br>
+                Specifies the type of button<br>
+                Specifies an initial value for the button
+        </td>
+        </tr>
+
+
+    </table>
+</div>
+
+<!--  --------------------------------------------------------------------  -->
+
+<div> <br><br>
+   2.ให้หาความเหมือนและความแตกต่างระหว่าง 2 Tag ที่กำหนดให้
+   <br><br>
+    <table border="1">
+        <tr>
+            <th>Attribute</th>
+            <th>Differentiation</th>
+        </tr>
+        <tr>
+            <td>&lt;hr&gt; & &lt;br&gt;</td>
+            <td>&lt;hr&gt; tag to define a thematic change in the content<br>
+                &lt;br&gt; tag inserts a single line break
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;ul&gt; & &lt;ol&gt;</td>
+            <td>&lt;ul&gt; tag defines an unordered (bulleted) list.<br>
+                &lt;ol&gt; tag defines an ordered list. An ordered list can be numerical or alphabetical
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;select&gt; & &lt;checkbox&gt;& &lt;radio button&gt;</td>
+            <td>&lt;select&gt; defines a drop-down list<br>
+                &lt;checkbox&gt; defines a checkbox <br>
+                &lt;radio button&gt; defines a radio button
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;div&gt; & &lt;span&gt;</td>
+            <td>&lt;div&gt; defines a division or a section in an HTML document<br>
+                &lt;span&gt; tag is used to group inline-elements in a document
+            </td>
+        </tr>
+
+
+        <tr>
+            <td>&lt;script&gt; & &lt;style&gt;</td>
+            <td>&lt;script&gt; define a client-side script <br>
+                &lt;style&gt; define style information for an HTML document
+            </td>
+        </tr>
+
+
+    </table>
+</div>
+
+
+<!--  --------------------------------------------------------------------  -->
+
+<div> <br><br>
+    3.ให้หาว่า input type มีอะไรบ้างแต่ละ Type แตกต่างกันอย่างไร
+    <br><br>
+<table border="1">
+    <tr>
+        <th>Attribute</th>
+        <th>Define</th>
+    </tr>
+    <tr>
+        <td>button</td>
+        <td>defines a button</td>
+    </tr>
+
+    <tr>
+        <td>checkbox</td>
+        <td>defines a checkbox</td>
+    </tr>
+
+    <tr>
+        <td>color</td>
+        <td>is used for input fields that should contain a color</td>
+    </tr>
+
+    <tr>
+        <td>date</td>
+        <td>is used for input fields that should contain a date</td>
+    </tr>
+
+    <tr>
+        <td>datetime-local</td>
+        <td>specifies a date and time input field, with no time zone</td>
+    </tr>
+
+    <tr>
+        <td>email</td>
+        <td>is used for input fields that should contain an e-mail address</td>
+    </tr>
+
+    <tr>
+        <td>file</td>
+        <td> defines a file-select field and a "Browse" button for file uploads</td>
+    </tr>
+
+    <tr>
+        <td>hidden</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>image</td>
+        <td></td>
+    </tr>
+
+    <tr>
+        <td>month</td>
+        <td>allows the user to select a month and year</td>
+    </tr>
+
+    <tr>
+        <td>number</td>
+        <td>defines a numeric input field</td>
+    </tr>
+
+    <tr>
+        <td>password</td>
+        <td>defines a password field</td>
+    </tr>
+
+    <tr>
+        <td>radio</td>
+        <td>defines a radio button</td>
+    </tr>
+
+    <tr>
+        <td>range</td>
+        <td>defines a control for entering a number whose exact value is not important</td>
+    </tr>
+
+    <tr>
+        <td>reset</td>
+        <td>defines a reset button that will reset all form values to their default values</td>
+    </tr>
+
+    <tr>
+        <td>search</td>
+        <td>is used for search fields (a search field behaves like a regular text field)</td>
+    </tr>
+
+    <tr>
+        <td>submit</td>
+        <td>defines a button for submitting form data to a form-handler</td>
+    </tr>
+
+    <tr>
+        <td>tel</td>
+        <td>is used for input fields that should contain a telephone number</td>
+    </tr>
+
+    <tr>
+        <td>text</td>
+        <td>defines a single-line text input field</td>
+    </tr>
+
+    <tr>
+        <td>time</td>
+        <td>allows the user to select a time (no time zone)</td>
+    </tr>
+
+    <tr>
+        <td>url</td>
+        <td>is used for input fields that should contain a URL address</td>
+    </tr>
+
+    <tr>
+        <td>week</td>
+        <td>allows the user to select a week and year</td>
+    </tr>
+
+
+
+
+</table>
+
+
+
+</div>
+
+</body>
+</html>
