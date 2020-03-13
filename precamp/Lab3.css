@@ -1,0 +1,123 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .grid-head {
+    color: white;
+    background-color:#993399;
+    
+    padding: auto;
+    height: 40px;
+    font-size: 16px;
+    grid-column: 1 / 4;
+  }
+  .grid-menu {
+    color: black;
+    background-color:white;
+    
+    padding: auto;
+    height: 90px;
+    font-size: 16px;
+    grid-column: 1 / 4;
+  }
+  .grid-slideshow {
+    color: white;
+    background-color:black;
+    
+    padding: auto;
+    height: 490px;
+    font-size: 16px;
+    grid-column: 1 / 4;
+      
+  }
+  .grid-boxUnderSlideshow {
+    color: black;
+    background-color:white;
+    
+    padding: auto;
+    height: 200px;
+    font-size: 16px;
+    grid-column: 1 / 4;
+    z-index: 2;
+  }
+
+  .grid-textbox {
+    color: black;
+    background-color:white;
+    text-align: center;
+    padding: auto;
+    height: 300px;
+    font-size: 16px;
+    grid-column: 1 / 4;
+      
+  }
+  .grid-textbox2 {
+    color: black;
+    background-color:white;
+    text-align: left;
+    padding: auto;
+    height: 350px;
+    font-size: 16px;
+    grid-column: 1 / 4;
+      
+  }
+ 
+
+
+
+     
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+  }
+  .flex-container > div {
+  background-color: rebeccapurple;
+  width: 250px;
+  height: 200px;
+  margin: 0px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  }
+
+  
+  .flex-container2 {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+   
+  }
+  .flex-container2 > div {
+  background-color: rebeccapurple;
+  width: 250px;
+  height: 200px;
+  margin: 40px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  }
+  .flex-container3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+   
+  }
+  .flex-container3 > div {
+  background-color: rebeccapurple;
+  width: 250px;
+  height: 200px;
+  margin: 40px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  }
