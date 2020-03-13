@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          border-bottom: 1px dotted black;
+        }
+        
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 120px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+        
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+        }
+        
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+        }
+        </style>
+
+
+</head>
+<body>
+    1.ค้นหาข้อมูลว่าแท๊ก &lt;!DOCTYPE html> มีหน้าที่อะไร <br>
+
+    <p>DOCTYPE คือ การประกาศว่าเอกสารเว็บเพจนั้นสร้างขึ้นมาโดยยึดหลักตามมาตราฐานใด ซึ่งมาตราฐานที่เราใช้กันทุกวันนี้กับการแสดงผลเว็บเพจ จะมีที่ใช้กันอยู่ 3 มาตราฐาน คือ- HTML- XHTML- HTML 5
+      
+    </p> <br>
+    2. ถ้าอยากให้มี tooltip ใน Tag นั้นต้องใช้ attribute ใด <br> <br>
+    CSS Tooltip    
+      <div class="tooltip">Hover over me
+        <span class="tooltiptext">Tooltip text</span>
+      </div>
+      <br><br>
+    3. แท๊ก &lt;b>, &lt;i> ต่างจาก &lt;strong>,&lt;em> หรือไม่ อย่างไร? <br><br>
+    ตัวอย่าง แท๊ก  &lt;b>, &lt;i> , <b>Test b</b>, <i>Test i</i> <br><br>
+    ตัวอย่าง แท๊ก  &lt;strong>, &lt;em> , <strong>Test strong</strong>, <em>Test em</em> <br>
+    &lt;b> ทำให้ตัวหนังสือหนา แต่ &lt;strong> ทำให้โปรแกรมที่เปิดอ่านรู้ว่าส่วนนี้มีความสำคัญ เช่น ใช้ในการเตือนต่างๆ <br>
+    &lt;i> ทำให้ตัวหนังสือเอียง แต่ &lt;em> ทำให้โปรแกรมทราบว่าข้อความส่วนนี้มีความสำคัญมากๆ <br><br>
+    4. หา tag ที่สามารถแสดงข้อความกลับหลังได้ <br><br>
+    &lt;bdo> element ตามตัวอย่างด้านล่าง<br><br>
+    This paragraph will go right-to-left.<br>
+    <bdo dir="rtl">This paragraph will go right-to-left.</bdo>
+
+
+
+
+
+
+</body>
+</html>

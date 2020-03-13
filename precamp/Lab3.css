@@ -39,14 +39,15 @@
       
   }
   .grid-boxUnderSlideshow {
-    color: black;
+    color:rgba(255, 0, 0, 0.3);
     background-color:white;
-    
+    position: relative;
+    top:-200px;
     padding: auto;
     height: 200px;
     font-size: 16px;
     grid-column: 1 / 4;
-    z-index: 2;
+  
   }
 
   .grid-textbox {
@@ -78,7 +79,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-   
+    color:rgba(255, 255, 255, 0.1);
   }
   .flex-container > div {
   background-color: rebeccapurple;
@@ -95,10 +96,11 @@
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
+    color:rgba(255, 255, 255, 0.1);
    
   }
   .flex-container2 > div {
-  background-color: rebeccapurple;
+  background-color:rgba(42, 45, 255, 0.1);
   width: 250px;
   height: 200px;
   margin: 40px;
