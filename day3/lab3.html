@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          border-bottom: 1px dotted black;
+        }
+        
+        .tooltip .tooltiptext {
+          visibility: hidden;
+          width: 120px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+        
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+        }
+        
+        .tooltip:hover .tooltiptext {
+          visibility: visible;
+        }
+
+
+
+        #boxxx {
+            border: 2px solid;
+            padding: 10px;
+            box-shadow: 5px 2px #888888;
+}
+        </style>
+
+
+
+
+</head>
+<body>
+    <form action="#" id="boxxx">
+       <table>
+        <tr>  
+       
+             <td><label for="fname">Name <span style="color: red;"> *</span>:</label></td>
+             <td><input type="text" id="fname" name="fname"><div class="tooltip"><i class="fa fa-question"></i>
+                <span class="tooltiptext">Tooltip text</span>
+              </div> </td>
+        
+        </tr>
+
+    <tr>
+             <td> <label for="lname">Tab Text <span style="color: red;"> *</span>:</label></td>
+             <td><input type="text" id="lname" name="lname"> <div class="tooltip"><i class="fa fa-question"></i>
+                <span class="tooltiptext">Tooltip text</span>
+              </div></td>
+    </tr>
+    <tr>
+
+        <td>URL <span style="color: red;"> *</span>:</td>
+            <td> <label for="urln2">http://www.wizehive.com/webform/</label><input type="text" id="urlname" name="urlname"></td>
+    </tr>   
+    <tr>
+        <td colspan="2">
+        <hr> 
+    </td>
+
+    </tr> 
+    <tr>
+        <td> <h4>FORM SETUP</h4> </td>
+    </tr>
+
+    <tr>
+        
+        <td> <label for="form1">Form :</label>  </td>
+        <td>   <select name="pets" id="pet-select">
+            <option value="">--Please choose an option--</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+        </select>
+        <input type="button" value="edit">  </td>
+    </tr>
+
+
+    <tr>
+        <td>  <label for="logo1">Logo :</label>  </td>
+        <td> no logo uploaded:
+            <input type="submit" value="Upload Logo" name="submit"></td>
+
+     </tr>
+         
+     <tr>
+        <td>   <label for="form1">Template Text :</label> </td>
+        <td> <select name="pets2" id="pet-select2">
+        <option value="Eng">English</option>
+        <option value="THI">THAI</option>
+       
+        </select>
+    <input type="button" value="edit">  </td>
+
+</tr>
+<tr>
+    <td> <label for="form2">Review Form :</label></td>
+    <td><select name="pets3" id="pet-select3">
+    <option value="Eng">Default</option>
+    <option value="THI">Form 1</option>
+   
+    </select></td>
+</tr>
+
+<tr>
+    <td><label for="form1">Review Score :</label> </td>
+    <td> <select name="pets2" id="pet-select2">
+    <option value="Eng">Rating</option>
+    <option value="THI">5 Star</option>
+    <option value="THI">4 Star</option>
+   
+    </select>
+<input type="button" value="Reload Fields">
+</td>
+</tr>
+
+<tr>
+    <td><label for="form1">Score Type :</label></td>
+    <td><select name="pets2" id="pet-select2">
+<option value="Eng">Average</option>
+<option value="THI">5 Star</option>
+<option value="THI">4 Star</option>
+
+</select></td>
+</tr>
+<tr>
+    <td> <label for="fname">Max Score :</label> </td>
+    <td><input type="text" id="fname" name="fname" value="4.00"></td>
+</tr>
+
+</table>
+
+    </form>
+
+
+
+
+</body>
+</html>
