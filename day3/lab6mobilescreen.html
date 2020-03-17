@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+
+
+
+
+
+    <title>lab6 Mobile responsive</title>
+
+<style>
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+h1 {
+    font-size: 60px;
+    font-weight: bolder;
+}
+.banner{
+    width: 200%;
+   
+    z-index: -1;
+    }
+
+
+.container{
+   
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+  
+ 
+}
+.lmenu{
+grid-row:1/6;
+
+z-index: 1;
+
+}
+
+.rmenu{
+grid-row:1/6;
+grid-column: 4;
+background-color: red;
+
+}
+
+.register{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom :200px;
+    background-color: white;
+border-radius: 10%;
+padding: 70px;
+grid-template-columns: auto auto;
+
+}
+.title1{
+    grid-column: 1/3;
+}
+
+
+.subject{
+    grid-column: 1/3;
+
+}
+
+.bSend{
+    align-items: center;
+    grid-column: 1/3;
+
+}
+
+.textBox5{
+   
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: left;
+    justify-content: space-between;
+    
+}
+.textBox5 .photoL{
+    display: flex;
+    position: relative;
+    left :500px;
+    align-items: left;
+    z-index: -1;
+
+}
+
+@media screen and (max-width: 500px){
+    
+    .register >div {
+        grid-template-columns: 50%;
+        padding: 20px;
+        grid-column: 1/3;
+        bottom :50px;
+    }
+   
+    .textBox5{
+
+    grid-template-columns: auto;
+    }
+}
+
+
+
+</style>
+    
+
+</head>
+<body>
+    <img class="banner" src="/day3/lab6img/banner.jpg">
+
+    <div class="container">
+        <div class="lmenu">
+           
+        </div>
+
+        <div class="bgc">
+
+        <form class="register">
+            
+            <div class="title1">
+                <h1>Contact us <span style="color:red;">today</span></h1>
+            </div>
+
+            
+                <div class="yName">
+                    Your Name (required) <br>
+                    <input type="text">
+
+                </div>
+                <div class="yMail">
+                     Your Email (required) <br>
+                     <input type="text">
+                </div>
+           
+
+                <div class="subject"> 
+                     Subject <br>
+                    <input type="text">
+
+                </div>
+
+                <div class="yMessage"> 
+                     Your Message <br>
+                     <textarea rows="4" cols="65" name="comment" form="register">
+                    </textarea>
+
+                </div>
+
+                <div class="bSend">
+                    <input type="submit" value="SEND" >
+                </div>
+           
+                     
+        </form>
+
+<div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nemo? Ut fuga commodi totam, distinctio hic sit eum magnam iusto fugiat! Magnam illum incidunt saepe quia veritatis quidem amet tempore.
+Dolore laudantium voluptatibus nesciunt odit quae esse iusto cupiditate quibusdam quam aperiam similique quidem, illum exercitationem. Officiis vel assumenda, voluptatibus dolor numquam aperiam, accusamus velit soluta, sit odio et nesciunt!
+Architecto expedita mollitia laudantium atione soluta facilis? Adipisci exercitationem atque mollitia, repudiandae modi cum, culpa, sit quaerat recusandae harum natus. Molestias nisi sint architecto deleniti.
+</div>
+    
+<div class="photo2"> 
+    <img src="/day3/lab6img/contact-video3.jpg" width="1100px"align-items="center">
+   
+</div>
+
+<div Class="textBox5">
+    <div><h1 style="color:red"> Digital <p> Strategy</h1> 
+        Business Intelligence <p>
+        SEO – Search Engine Optimization<p> 
+        SEM streategy <p>
+        Digital Content <p>
+        Branding Design<p>
+        UX & UI Design<p>
+        Product Prototype
+   </div>
+    <div><h1 style="color:red"> Digital <p>
+        WebSites & Microsites</h1> 
+        Responsive Design / Development <p>
+        Mobile APP & Games<p> 
+        SEM streategy <p>
+        Intranet & Extranet <p>
+        Virtual & Augmented Reality<p>
+        Interactive Installations
+     
+    </div>
+    
+    <div><h1 style="color:red"> E-Marketing</h1> 
+        BCampaigns management<p>
+        Market research<p> 
+        User analysis <p>
+        Brand activation<p>
+        E-Commerce Development<p>
+        Social Media strategy 
+
+    </div>
+    <div> <h1 style="color:red"> Graphic Design</h1> 
+        Creative Art direction<p>
+        Branding & Identity<p> 
+        3D modeling / Animation<p>
+        UI/UX design<p>
+        Prints & Signaletics<p>
+        Visual storytelling
+    </div>
+    <div><h1 style="color:red">Video <p>
+        Production</h1> 
+        Scripting / Story Boarding<p>
+        Filming<p> 
+        Editing/Grading<p>
+        Motion Design<p>
+        Sound design
+     
+    </div>
+    <div class="photoL">
+    <img src="/day3/lab6img/mo.jpg" width="400px" align-items="right">
+    </div>
+</div>
+
+
+
+</div>
+        
+
+    
+    </div>
+ 
+    </div>
+
+
+ 
+
+
+</body>
+</html>
