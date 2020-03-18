@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Paytone+One|Spartan&display=swap" rel="stylesheet"> 
+    <title>การบ้าน การใช้งาน BootStrap</title>
+
+<style>
+h1{
+    font-family: 'Paytone One', sans-serif;
+   
+    font-size: 3rem;
+    font-style: bold;
+
+}
+body{
+    font-family: 'Spartan', sans-serif;
+
+}
+    .container-fluid{
+        position: relative;
+        bottom: 200px;
+       
+    }
+
+   .banner {
+        width: 100vw;
+        text-align: center;
+        z-index: -1;
+   }
+
+   .vdoslide img {
+        width: 65vw;
+        text-align: center;
+
+        position: relative;
+        right: 20px;
+       
+   }
+   .sideimg img {
+        width: 50vw;
+        text-align: right;
+
+        position: absolute;
+        left:160px;
+        z-index: -1;
+       
+   }
+
+   .lmenu{
+       position: fixed;
+        z-index: 1;
+   }
+
+
+   .rmenu{
+       
+   }
+
+   .uinfo{
+    border-style: solid;
+    border: white;
+    border-radius: 1%;
+    background-color: white;
+    padding: 3%;
+     
+    box-shadow: 0px 0px 100px 2px #ccd1d1 ;
+    }
+
+
+.logoimg img{
+   position: relative;
+    top: 300px;
+   left: 20px;
+    width: 45px;
+
+
+}
+
+
+</style>
+
+
+</head>
+<body>
+
+    <div class="lmenu col-2"> <br>
+        <h1 style="font-style: bold; color: tomato;"> &nbsp;&nbsp;&nbsp;&nbsp;P</h1>
+        <div class="logoimg"><img src="/day5/lab2img/logo.png" alt="logo"> </div>
+    </div>
+
+    <img src="/day5/lab2img/banner.jpg" alt="banner"  class="banner">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+              
+            </div>
+           
+            <div class="col-8">
+                <form class ="uinfo" action="#">
+                    <h1 style="text-align: center;">Contact us<span style="color:red">today</span> </h1>
+                   
+                    <div class="row">
+                        <div class="form-group col-10 col-md-6">
+                            <label for="exampleInputEmail1">Your Name (required)</label>
+                            <input type="name" class="form-control"  aria-describedby="emailHelp" required>
+                        
+                        </div>
+                        <div class="form-group col-10 col-md-6">
+                            <label for="exampleInputEmail1">Your Email (required)</label>
+                            <input type="email" class="form-control"  aria-describedby="emailHelp" required>
+                        
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="form-group col-10 col-md-12">
+                            <label for="exampleInputEmail1">Subject</label>
+                            <input type="text" class="form-control" >
+                        </div>    
+
+                    </div>
+                    <div class="row">
+
+                        <div class="form-group col-10 col-md-12">
+                            <label for="exampleInputEmail1">Your Message</label><p>
+                            <textarea rows="4" class="form-control" name="comment" form="usrform">
+                            </textarea>
+                        </div>    
+
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-10 col-md-12" style="text-align: center;">
+                        <button type="button" class="btn btn-danger btn-lg" ><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  SEND &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  </h4></button>
+                        </div>
+                    </div>
+                </form>   
+
+                <div class="col-10 col-md-12" style="text-align:center;  font-size: 16pt; "> <br><br>
+                    
+                    Pimclick is a full service web design and online marketing agency offering a unique blend of creativity and expertise within the entirety of the digital spectrum. With headquarters located in Paris, France and branch offices dispersed throughout major cities such as Dubai, Hong Kong, Casablanca and Bangkok.
+                </div>
+
+
+                <div class="vdoslide col-10 col-md-12" style="text-align: center;"> <br><br>
+                    <img src="/day5/lab2img/contact-video3.jpg" alt="vdoslide">
+                </div> <br><br>
+
+                <div class="textcard row">
+                <div class="col-10 col-lg-5" style="text-align: left;"> 
+                    <h1 style="color: red;">Digital <p>Strategy </h1> <br>
+                      
+                        Business Intelligence <p>
+                        SEO – Search Engine Optimization <p>
+                        SEM streategy <p>
+                        Digital Content <p>
+                        Branding Design <p>
+                        UX & UI Design <p>
+                        Product Prototype 
+                    
+                </div>
+
+                <div class="col-10 col-lg-5" style="text-align: left;"> 
+                    <h1 style="color: red;">Digital <p>Production </h1> <br>
+                      
+                        WebSites & Microsites <p>
+                        Responsive Design / Development <p>
+                        Mobile APP & Games <p>
+                        Intranet & Extranet <p>
+                        Virtual & Augmented Reality <p>
+                        Interactive Installations  
+                </div>
+
+
+                <div class="col-10 col-lg-5" style="text-align: left;"> 
+                    <h1 style="color: red;">E-Marketing </h1> <br>
+                      
+                    Campaigns management <p>
+                    Market research <p>
+                    User analysis <p>
+                    Brand activation <p>
+                    E-Commerce Development <p>
+                    Social Media strategy and <p>
+                    optimisation <p>
+                    Advocacy & Influencer      
+                    
+                </div>
+
+                <div class="col-10 col-lg-5" style="text-align: left;"> 
+                    <h1 style="color: red;">Graphic Design </h1> <br>
+                      
+                    Creative Art direction <p>
+                    Branding & Identity <p>
+                    3D modeling / Animation<p>
+                    UI/UX design <p>
+                    Prints & Signaletics <p>
+                    Visual storytelling  <p>
+                    Layouting & Infographics <p>
+                    Typography  
+
+                </div>
+
+                <div class="col-10 col-lg-5" style="text-align: left;"> 
+                    <h1 style="color: red;">Video <p>Production </h1> <br>
+                      
+                        Campaigns management <p>
+                        Scripting / Story Boarding <p>
+                        Filming <p>
+                        Editing/Grading <p>
+                        Motion Design <p>
+                        Sound design
+                </div>
+
+                <div class="sideimg col-10 col-lg-5" style="text-align: right;"> 
+                    <img src="/day5/lab2img/mo.jpg" alt="">
+                </div>
+
+
+
+
+
+            </div>
+            
+
+            </div>
+            <div class="rmenu col-2">
+                
+            </div>
+
+
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+</body>
+</html>
