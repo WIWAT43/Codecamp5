@@ -1,1 +1,2 @@
 Test git
+use git restore . for all in folder
