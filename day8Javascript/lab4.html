@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        //4.6 ตัวดำเนินการเริ่มต้น
+        // 1.ให้ระบุค่าของ a,b,c และ d หลังจากจบ statements ทั้งสามบรรทัด
+        let a = 1, b = 1;
+
+        let c = ++a;
+        let d = b++;
+        console.log(`A = ${a} B = ${b} C = ${c} D = ${d}  `); // A = 2 B = 2 C = 2 D = 1  
+
+        // 2. จงหาผลลัพธ์ของ Statement ต่อไปนี้
+        console.log("2. จงหาผลลัพธ์ของ Statement ต่อไปนี้");
+        console.log(" "+1+0);       //10
+        console.log(" "-1+0);       //-1
+        console.log(true + false);  //1
+        console.log(6/"3");         //2
+        console.log("2"*"3");       //6
+        console.log(4+5+"px");      //9px
+        console.log("$"+4+5);       //$45
+        console.log("4"-2);         //2
+        console.log("4px"-2);       //NaN
+        console.log(7/0);           //Infinity
+        console.log("-9"+5);        //-95
+        console.log("-9"-5);        //-14
+        console.log(null+1);        //1
+        console.log(undefined +1);  //NaN
+        console.log("\t\n"-2);      //-2
+
+        // 5.7 การเปรียบเที่ยบ แบบฝึกหัด จงหาค่าของการเปรียบเทียบต่อไปนี้
+        console.log("5.7 การเปรียบเที่ยบ แบบฝึกหัด จงหาค่าของการเปรียบเทียบต่อไปนี้");
+
+        console.log(5>4);                   //true
+        console.log("apple">"pineapple");   //false
+        console.log("2">"12");              //true
+        console.log(undefined == null);     //true
+        console.log(undefined === null);    //false
+        console.log("bee" < "be");          //false     
+        console.log("bee">"Bee");           //true
+        console.log("Bee"<"be");            //true
+
+
+
+    </script>
+
+</html>
