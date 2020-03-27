@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Camp 5 Loop</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        // 1.แบบฝึกหัด เลขที่ถูก Alert เป็นลำดับสุดท้ายคือเลขอะไร
+
+            let i = 3;
+            while (i){
+                alert (i--);
+            }
+            // คำตอบ เลขที่ ถูก Alert สุดท้ายคือ 1
+
+        // 2.Code ทั้งสองอันนี้ จะแสดง Alert ออกมาเหมือนกันทั้งหมดหรือไม่
+          let i2 = 0;
+          while (++i2 < 5) console.log (i2);     
+
+            let i3 = 0;
+           while (i3++ < 5) console.log (i3);              
+            // คำตอบ i2 แสดง 1-4 ส่วน i3 แสดง 1-5
+
+         // 3. Code ทั้ง 2 อันนี้จะแสดง alert ออกมาเหมือนกันทั้งหมดหรือไม่
+
+        for (let i4 = 0; i4 <5; i4++) console.log(i4);
+       
+        for (let i5 = 0; i5 <5; ++i5) console.log(i5);
+            // แสดงผลเหมือนกัน
+
+        // 4. ให้เขียน loop ทั้ง 2 แบบ แสดงเลข 2-10 ออกมา
+
+            for (let i6 = 2; i6<=10; i6++) console.log(i6);
+
+            let i7 = 2;
+            while (i7 <= 10){
+                console.log(i7);
+                i7++;
+            }
+
+        // 5. เปลี่ยน Code for loop ด้านล่างนี้ให้เป็น While loop โดยที่ผลลัพธ์ยังเหมือนเดิม
+
+            for (let i8 = 0; i8 < 3; i8++){
+               console.log(`number ${i8}!`);
+            }
+
+            let i9 = 0;
+            while (i9 <3 ){
+               console.log(`number ${i9}!`);
+               i9++;
+
+            }
+
+        //6 ให้เขียนเกมส์ทายตัวเลขสำหรับเล่น 2 คน
+
+        let num = prompt("กรุณาใส่หมายเลข 1-100"); 
+
+            if (num >= 1 && num <= 100){
+
+                while (true){
+                let guess = prompt("กรุณาใส่หมายเลข 1-100 เพื่อการเดา"); 
+                    if (guess > num) alert(`หมายเลขที่คุณกรอก ${guess} มากกว่า หมายเลขปริษณา`);
+                    else if (guess < num) alert(`หมายเลขที่คุณกรอก ${guess} น้อยกว่า หมายเลขปริษณา`);
+                    else if (guess == num) {
+                        alert(`ยินดีด้วยครับ หมายเลข ${guess} คือคำตอบที่ถูกต้อง`);
+                        break;
+                    }
+                }
+
+            } else alert('กรุณากรอกตัวเลขใหม่ โดยการ รีเฟรชเพจ');
+
+
+
+
+    </script>
+
+
+</html>

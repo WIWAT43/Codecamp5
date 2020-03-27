@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Camp 5 Javascrip</title>
+</head>
+<body>
+    
+</body>
+
+    <script>
+            // ให้เขียนระบบ Login
+            let userN = prompt ("กรุณากรอก Username");
+
+            if ( userN == "admin" || userN == "Admin" || userN == "ADMIN"){
+                let passW = prompt ("กรุณากรอก Password");
+                    if (passW == "codecamp#5") alert ("ยินดีต้อนรับ");
+                    else if (passW == "" || passW == null || passW == undefined ) alert ("ยกเลิก");
+                    else alert ("Wrong password");
+
+
+            } else if (userN == null || userN == undefined || userN == "" || userN == " ") {
+                alert("ยกเลิก");
+            } else alert("ผมไม่รู้จักคุณ");
+
+           
+    </script>
+
+</html>
