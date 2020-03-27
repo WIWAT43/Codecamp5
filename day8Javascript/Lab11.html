@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+
+// 1.         
+      function method1(n){
+        let star="";
+        for (let i = 0; i<n ; i++)
+            star += "*";
+        return star;    
+      }  
+      console.log("1.-------------------");    
+      console.log(method1(7));
+// 2.
+
+function method2(n){
+      console.log("2.------------------");  
+        let star="";
+        for (let x = 0; x<n ; x++){
+            star="";
+                for (let i = 0; i<n ; i++)
+                    star += "*";
+            console.log(star);
+        }
+        
+        return star;    
+      }
+    
+     method2(4);
+// 3.
+
+function method3(n){
+      console.log("3.------------------");  
+        let txt="";
+        for (let x = 0; x<n ; x++){
+            txt="";
+                for (let i = 1; i<=n ; i++)
+                    txt += i;
+            console.log(txt);
+        }
+        
+    }
+    
+     method3(4);
+// 4.
+
+function method4(n){
+      console.log("4.------------------");  
+        let txt="";
+        for (let x = 0; x<n ; x++){
+            txt="";
+                for (let i = 0; i<n ; i++)
+                    txt += x+1;
+            console.log(txt);
+        }
+        
+    }
+    
+     method4(4);
+// 5.
+
+function method5(n){
+      console.log("5.------------------");  
+        let txt="";
+        for (let x = 0; x<n ; x++){
+            txt="";
+                for (let i = 0; i<n ; i++)
+                    txt += n-x;
+            console.log(txt);
+        }
+        
+    }
+    
+     method5(5);
+// 6.
+
+function method6(n){
+      console.log("6.------------------");  
+        let txt="";
+        let num=0;
+        for (let x = 0; x<n ; x++){
+            txt="";
+                for (let i = 1; i<=n ; i++){
+                    num++;
+                    txt += num;
+                }
+                    
+            console.log(txt);
+        }
+        
+    }
+    
+    method6(4);
+// 7.
+
+function method7(n){
+      console.log("7.------------------");  
+        let txt="";
+        let num=n*n;
+        for (let x = 0; x<n ; x++){
+            txt="";
+                for (let i = 1; i<=n ; i++){
+                   
+                    txt += num;
+                    num--;
+                }
+                    
+            console.log(txt);
+        }
+        
+    }
+     method7(4);
+
+// 8.
+
+function method8(n){
+      console.log("8.------------------");  
+      
+        for (let x = 0; x<n ; x++){
+            console.log(x*2);
+        }
+        
+    }
+     method8(4);
+// 9.
+
+function method9(n){
+      console.log("9.------------------");  
+        
+        for (let x = 1; x<=n ; x++){
+            console.log(x*2);
+        }
+        
+    }
+     method9(4);
+
+// 10.
+
+function method10(n){
+      console.log("10.------------------");  
+        let txt="";
+        
+        for (let x = 1; x<=n ; x++){
+            txt="";
+                for (let i = 1; i<=n ; i++){
+                   
+                    txt += x*i;
+                    
+                }
+                    
+            console.log(txt);
+        }
+        
+    }
+     method10(4);
+// 11.
+
+function method11(n){
+      console.log("11.------------------");  
+        let txt="";
+        
+        for (let x = 1; x<=n ; x++){
+            txt="";
+                for (let i = 1; i<=n ; i++){
+                   if (x==i) txt += "_";
+                   else txt += "*";
+
+                                       
+                }
+                    
+            console.log(txt);
+        }
+        
+    }
+     method11(4);
+// 12.
+
+function method12(n){
+      console.log("12.------------------");  
+        let txt="";
+        
+        for (let x = 0; x<n ; x++){
+            txt="";
+                for (let i = 1; i<=n ; i++){
+                   if (i== (n-x)) txt += "_";
+                   else txt += "*";
+                                    
+                }
+                    
+            console.log(txt);
+        }
+        
+    }
+     method12(4);
+// 13.
+
+function method13(n){
+      console.log("13.------------------");  
+        let txt="";
+        
+        for (let x = 1; x<=n ; x++){
+            txt="";
+                for (let i = 1; i<=n ; i++){
+                   if (i <= x) txt += "*";
+                   else txt += "_";
+                                    
+                }
+                    
+            console.log(txt);
+        }
+        
+    }
+     method13(4);
+// 14.
+
+function method14(n){
+      console.log("14.------------------");  
+        let txt="";
+        
+        for (let x = n; x >= 1 ; x--){
+            txt="";
+                for (let i = 1; i<=n ; i++){
+                   if (i <= x) txt += "*";
+                   else txt += "_";
+                                    
+                }
+                    
+            console.log(txt);
+        }
+        
+    }
+     method14(4);
+
+// 15.
+
+function method15(n){
+      console.log("15.------------------");  
+        let txt="";
+        
+        for (let x = 1; x <= n ; x++){
+            txt="";
+                for (let i = 1; i<=n ; i++){
+                   if (i > x) txt += "-";
+                   else txt += "*";
+                                  
+                }
+                    
+            console.log(txt);
+        }
+        for (let x = n-1; x >= 1 ; x--){
+            txt="";
+                for (let i = 1; i<=n ; i++){
+                   if (i > x) txt += "-";
+                   else txt += "*";
+                                  
+                }
+                    
+            console.log(txt);
+        }
+       
+    }
+     method15(2);
+// 16. ข้อ 16 ไม่มีครับ
+// 17.
+
+function method17(n){
+      console.log("17.------------------");  
+        let txt="";
+        
+        for (let x = 0; x < n ; x++){
+            txt="";
+                for (let i = 1; i<=n ; i++){
+                   if (i < n-x) txt += "-";
+                   else txt += "*";
+                                    
+                }
+                    
+            console.log(txt);
+        }
+        
+    }
+     method17(4);
+// 18.
+
+function method18(n){
+      console.log("18.------------------");  
+        let txt="";
+        
+        for (let x = 0; x < n ; x++){
+            txt="";
+                for (let i = 1; i<=n ; i++){
+                   if (i<=x) txt += "-";
+                   else txt += "*";
+                                    
+                }
+                    
+            console.log(txt);
+        }
+        
+    }
+    method18(4);
+
+// 19.
+
+function method19(n){
+      console.log("19.------------------");  
+        let txt="";
+        
+
+        for (let x = n-1; x >= 1 ; x--){
+            txt="";
+                for (let i = 1; i<=n ; i++){
+                   if (i > x) txt += "*";
+                   else txt += "-";
+                                  
+                }
+                    
+            console.log(txt);
+        }
+
+
+        for (let x = 0; x < n ; x++){
+            txt="";
+                for (let i = 1; i<=n ; i++){
+                   if (i > x) txt += "*";
+                   else txt += "-";
+                                  
+                }
+                    
+            console.log(txt);
+        }
+        
+       
+    }
+     method19(4);
+// 20.
+
+function method20(n){
+      console.log("20.------------------");  
+        let txt="";
+        let num=0;
+
+        for (let x = n-1; x >= 1 ; x--){
+            txt="";
+                for (let i = 1; i<=n ; i++){
+                   if (i > x) txt += ++num;
+                   else txt += "-";
+                                  
+                }
+                    
+            console.log(txt);
+        }
+
+
+        for (let x = 0; x < n ; x++){
+            txt="";
+                for (let i = 1; i<=n ; i++){
+                   if (i > x) txt += ++num;
+                   else txt += "-";
+                                  
+                }
+                    
+            console.log(txt);
+        }
+        
+       
+    }
+     method20(4);
+// 21.
+
+function method21(n){
+      console.log("21.------------------");  
+        let txt="";
+      
+        for (let x = 1; x <= n ; x++){
+            txt="";
+                
+                for (let i = 1; i<n ; i++){
+                   if (i > n-x) txt += "*";
+                   else txt += "-";
+                }
+
+                for (let i = 1; i<=n ; i++){
+                   if (i > x) txt += "-";
+                   else txt += "*";
+                }
+                    
+            console.log(txt);
+        }
+          
+       
+    }
+     method21(4);
+// 22.
+
+function method22(n){
+      console.log("22.------------------");  
+        let txt="";
+      
+        for (let x = n; x >= 1 ; x--){
+            txt="";
+                
+                for (let i = 1; i<n ; i++){
+                   if (i > n-x) txt += "*";
+                   else txt += "-";
+                }
+
+                for (let i = 1; i<=n ; i++){
+                   if (i > x) txt += "-";
+                   else txt += "*";
+                }
+                    
+            console.log(txt);
+        }
+          
+       
+    }
+     method22(4);
+// 23.
+     function method23(n){
+      console.log("23.------------------");  
+        let txt="";
+      
+        for (let x = 1; x <= n ; x++){
+            txt="";
+                
+                for (let i = 1; i<n ; i++){
+                   if (i > n-x) txt += "*";
+                   else txt += "-";
+                }
+
+                for (let i = 1; i<=n ; i++){
+                   if (i > x) txt += "-";
+                   else txt += "*";
+                }
+                    
+            console.log(txt);
+        }
+
+
+
+
+        for (let x = n-1; x >= 1 ; x--){
+            txt="";
+                
+                for (let i = 1; i<n ; i++){
+                   if (i > n-x) txt += "*";
+                   else txt += "-";
+                }
+
+                for (let i = 1; i<=n ; i++){
+                   if (i > x) txt += "-";
+                   else txt += "*";
+                }
+                    
+            console.log(txt);
+        }
+          
+       
+    }
+     method23(4);
+
+
+
+// 24.
+function method24(n){
+      console.log("24.------------------");  
+        let txt="";
+        let num=0;
+        for (let x = 1; x <= n ; x++){
+            txt="";
+                
+                for (let i = 1; i<n ; i++){
+                   if (i > n-x) txt += ++num;
+                   else txt += "-";
+                }
+
+                for (let i = 1; i<=n ; i++){
+                   if (i > x) txt += "-";
+                   else txt += ++num;
+                }
+                    
+            console.log(txt);
+        }
+
+
+
+
+        for (let x = n-1; x >= 1 ; x--){
+            txt="";
+                
+                for (let i = 1; i<n ; i++){
+                   if (i > n-x) txt += ++num;
+                   else txt += "-";
+                }
+
+                for (let i = 1; i<=n ; i++){
+                   if (i > x) txt += "-";
+                   else txt += ++num;
+                }
+                    
+            console.log(txt);
+        }
+          
+       
+    }
+     method24(4);
+
+
+    </script>
+
+
+</html>
