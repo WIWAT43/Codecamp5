@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code camp 5 Wiwat Sathornsawat</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        // 4.18.1 แบบฝึกหัด
+
+            let obj1 = {};
+
+            obj1.name = "Sonter";
+            obj1.surname = "Pakorn";
+
+            obj1.name = "Boy";
+            delete obj1.name;
+        
+        // 4.18.2 ให้เขียนฟังก์ชั่นชื่อ isEmpty
+
+            function isEmpty(obj2){
+                for (let key in obj2){
+                    return false;
+                }
+                return true;
+            }
+
+            let obj2 ={};
+            isEmpty(obj2);
+
+        // 4.18.3 การเขียนข้างล่างต่อไปนี้ Error มั้ย
+
+            const user = {
+                name : "John"
+            };
+
+            user.name = "Pete";  // ไม่มี error
+
+        // 4.18.4 จงเขียนฟังก์ชั่น ให้ฟังก์ชั่นคือนค่าเป็นผลรวมของเงินเดือนพนักงานทั้งหมด
+
+        let salaries = {
+            John : 100,
+            Ann  : 160,
+            Pete : 130
+        };
+
+        function objSum(obj3) {
+            let sum= 0;
+            for (let key in obj3) {
+                sum += obj3[key];
+            }
+            return sum;
+        }
+        objSum(salaries);
+
+
+        // 4.18.5 จงเขียนฟังก์ชั่น multiplyNumeric โดยถ้า Properties นั้นมี 
+        //  Value เป็น Number ให้คูณ Value นั้นด้วย Times
+
+            let menu = {
+                width :200,
+                height:300,
+                title :"My menu"
+            }
+            
+            function multiNumber(obj4, times){
+                for (let key in obj4) {
+                if ( typeof(obj4[key]) !== "number") continue;
+                obj4[key] *= times;
+                }
+            }
+
+            multiNumber(menu,3);
+
+    </script>
+
+        
+
+
+</html>

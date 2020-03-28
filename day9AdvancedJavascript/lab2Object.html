@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Camp 5 Wiwat Sathornsawat</title>
+</head>
+<body>
+    
+</body>
+    <script>
+    // 1. ให้สร้าง Object แบบ Object Iteral โดยกำหนดตัวแปลชื่อ human
+
+        let human ={
+            name    : "Wiwat",
+            age     : 19,
+            "home address" : "Cambodia",
+            isSingle  : true,
+            score   : 10
+        }
+    // 2. ให้เขียนโปรแกรมที่รับค่า Key และ Value ของ Properties จนกว่าจะเจอคำว่า stop
+
+        let key = prompt("Enter kay:");
+        let obj = {};
+
+        while (key !== "stop"){
+            let value = prompt ("Enter value");
+            obj[key] = value;
+            key = prompt("Enter kay:");
+        }
+        console.log(obj);
+
+    </script>
+</html>

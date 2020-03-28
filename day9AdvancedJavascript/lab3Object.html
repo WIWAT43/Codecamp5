@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Camp 5 Wiwat Sathornsawat</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        // 2. ให้รับค่า key และ Value โดยให้ Key เป็นชื่อผลไม้ Value เป็นจำนวน ถ้ามีจำนวนมากกว่า 1 ให้ เติม s ไปหลัง key ด้วย
+
+        let key = prompt("กรุณาใส่ชื่อผลไม้");
+        let fruit = {};
+
+        while (key !== "stop") {
+            let value = prompt("กรุณาใส่จำนวน");
+
+            if (value > 1) key += "s";
+            
+            fruit[key] = value;
+            key = prompt("กรุณาใส่ชื่อผลไม้"); 
+
+        }
+
+        console.log(fruit);
+    </script>
+</html>
