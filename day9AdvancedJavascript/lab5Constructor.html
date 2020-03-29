@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Camp 5 Wiwat Sathornsawat</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        // 7.4 แบบฝึกหัด สร้าง constructor function ที่ใช้สำหรับสร้าง Calculator 
+
+            function Calculator(){
+                this.read = function(){
+                    this.number1 = Number(prompt("Enter first number :"));
+                    this.number2 = Number(prompt("Enter second number :"));
+                }
+
+                this.sum = function (){
+                    return this.number1 + this.number2;
+                }
+
+                this.mul = function (){
+                    return this.number1 * this.number2;
+                }
+
+            }
+
+            let calculator = new Calculator();
+            calculator.read();
+            calculator.sum();
+            calculator.mul();
+
+
+
+    </script>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Camp 5 Wiwat Sathornsawat</title>
+</head>
+<body>
+    
+</body>
+
+    <script>
+        // 7.4 สร้าง Constructor function Accumulator
+
+            function Accumulator(startingValue){
+                this.value = startingValue;
+                this.read  = function() {
+                    let temp = prompt("Enter Number");
+                    this.value += Number(temp);
+                }
+            }
+            
+
+            let accumulator = new Accumulator(0);
+
+    </script>
+
+
+</html>
