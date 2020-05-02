@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+<style>
+
+.container{
+   display: grid;
+   grid-template-columns: 160px 160px;
+  
+   padding: 30px;
+   border-style: dashed;
+  width: 350px;
+}
+
+.smallBox{
+    display: grid;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+}
+.passenger{
+    display: grid;
+    grid-template-columns: 75px 75px 75px 75px;
+}
+select {
+    height: 30px;
+    padding: 30px;
+    border-color: slategray;
+    
+    
+}
+input{
+    width: 135px;
+    height: 25px;
+    
+}
+.searchBTN{
+    grid-column: 1/2;
+    padding: 20px;
+    
+    
+}
+.textBTN{
+    width: 120px; 
+    height: 40px;
+    font-size: 20px; 
+    color: white;
+    background-color: orangered;
+    border-radius: 7px;
+}
+
+
+</style>
+
+
+</head>
+<body>
+    
+    <form action="#" class="container">
+        <div class="smallBox">
+            <label for="flyingfrom">Flying from</label>
+            <select id="homeCity" name="city">
+                 <option value="Bangkok">Bangkok</option>
+                 <option value="Phuket">Phuket</option>
+                 <option value="Changmai">Changmai</option>
+                 <option value="Kabee">Kabee</option>
+             </select>
+        </div>
+
+        <div class="smallBox">
+            <label for="flyingfrom">To</label>
+            <select id="homeCity" name="city">
+                 <option value="Bangkok">Bangkok</option>
+                 <option value="Phuket">Phuket</option>
+                 <option value="Changmai">Changmai</option>
+                 <option value="Kabee">Kabee</option>
+             </select>
+        </div>
+
+        <div class = "smallBox">
+             <label for="Departing">Departing</label>
+             <input type="date" id="Departing" name="Departing">
+        </div>
+
+        <div class = "smallBox">
+            <label for="Returning">Returning</label>
+            <input type="date" id="Returning" name="Returning">
+       </div>
+
+        <div class ="passenger">
+            <div class="smallBox">
+                <label for="adult">Adult</label>
+                <select id="adult" name="adultnumber">
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="1">5</option>
+                     <option value="2">6</option>
+                     <option value="3">7</option>
+                     <option value="4">8</option>
+                     <option value="4">9</option>
+                 </select>
+            </div>
+
+            <div class="smallBox">
+                <label for="child">Child</label>
+                <select id="Child" name="Childnumber">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="1">5</option>
+                     <option value="2">6</option>
+                     <option value="3">7</option>
+                     <option value="4">8</option>
+                     <option value="4">9</option>
+                 </select>
+            </div>
+
+        
+
+            <div class="smallBox">
+                <label for="Infant">Infant</label>
+                <select id="Infant" name="Infantnumber">
+                     <option value="0">0</option>
+                     <option value="1">1</option>
+                     <option value="2">2</option>
+                     <option value="3">3</option>
+                     <option value="4">4</option>
+                     <option value="1">5</option>
+                     <option value="2">6</option>
+                     <option value="3">7</option>
+                     <option value="4">8</option>
+                     <option value="4">9</option>
+                 </select>
+            </div>
+
+            <div class="smallBox">
+                <label for="Currency" style="color: red;">Currency</label>
+                <select id="Currency" name="Currency">
+                     <option value="BHT">BHT</option>
+                     <option value="DOLLA">DOLLA</option>
+                     <option value="YEN">YEN</option>
+                
+                 </select>
+            </div>
+
+        </div>
+
+        <div class="searchBTN">
+            <input type="button" value="SEARECH" class = "textBTN">
+        </div>
+    </form>
+</body>
+</html>
